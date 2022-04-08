@@ -1,6 +1,8 @@
 import Card from "../Card/Card";
 import React from "react";
-import "./ListItem.css"
+import "./ListItem.css";
+import { useDispatch } from "react-redux";
+import { deleteItem, changeDone } from '../../actions/listActions'
 
 function DoneImg(props) {
   if (props.done) {
@@ -10,22 +12,20 @@ function DoneImg(props) {
   }
 }
 
+
 function ListItem(props) {
+  const dispatch = useDispatch();
   return (
     <li>
       <Card className={props.item.done ? "done item" : "item"}>
         {props.item.text}
         <div>
-          <button className="listButton"
-            onClick={() => {
-              props.onDone(props.item);
-            }}
-          >
-            <DoneImg done={props.item.done}></DoneImg>
+
+          <button className="listButton" onClick={() => {dispatch(changeDone(props.item.id));}}
+          ><DoneImg done={props.item.done}></DoneImg>
           </button>
-          <button className="listButton"
-            onClick={() => {
-              props.onItemDeleted(props.item);
+
+          <button className="listButton" onClick={() => {dispatch(deleteItem(props.item.id));
             }}
           >
             <img src="./trash.png" id="trash"></img>
