@@ -30,17 +30,18 @@ store.subscribe(()=>{
 
 function App() {
 
-  return (
+  return (<>
+  
+  <header><h1>TO DO</h1></header>
     <div className="container">
       {/*Store passada como parametro */}
       <Provider store={store}>
-      <header><h1>TO DO</h1></header>
-      {/* //Formulario recebendo uma função como propriedade */}
       <TodoForm ></TodoForm>
+      {/* //Formulario recebendo uma função como propriedade */}
       <List></List>
       </Provider>
-    </div> 
-    
+    </div>   
+  </>
   );
 }
 

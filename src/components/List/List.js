@@ -2,7 +2,7 @@ import React from "react";
 import ListItem from "../Item/ListItem";
 import {useSelector} from 'react-redux'
 
-function List() {
+function List(props) {
   const items = useSelector(state => state)
   return (
     <ul>

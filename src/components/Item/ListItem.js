@@ -20,9 +20,9 @@ function ListItem(props) {
       <Card className={props.item.done ? "done item" : "item"}>
         {props.item.text}
         <div>
-
           <button className="listButton" onClick={() => {dispatch(changeDone(props.item.id));}}
-          ><DoneImg done={props.item.done}></DoneImg>
+          >
+            <DoneImg done={props.item.done}></DoneImg>
           </button>
 
           <button className="listButton" onClick={() => {dispatch(deleteItem(props.item.id));
