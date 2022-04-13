@@ -20,7 +20,7 @@ function ListItem(props) {
     <li>
       <Card className={props.item.done ? "done item" : "item"}>
         {props.item.text}
-        <div>
+        <div id="iconButtons">
 
 
           <button className="listButton" onClick={() => {dispatch(changeDone(props.item.id));}}

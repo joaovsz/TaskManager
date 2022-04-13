@@ -62,6 +62,15 @@ form{
 @media (max-width: 650px){
     #addButton{
         margin-left: .5rem;
+        width:2.5rem;
+        height:2.5rem;
     }
+
+  .item{
+      font-size:.8rem;
+      line-height:.8rem;
+      text-align:left;
+  }
+    
 
 }

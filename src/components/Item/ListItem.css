@@ -15,5 +15,9 @@
     justify-content: flex-end;
 }  
 
+#iconButtons{
+   display: flex;
+    }
+
 
 
