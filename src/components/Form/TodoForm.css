@@ -1,9 +1,10 @@
 .description{
-    height:2.7rem;
+   
     padding: .5rem;
     border-radius: 4px;
-    width: 80%;
+    width: 90%;
     border: 0;
+
     box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
 }
 form{
@@ -18,18 +19,49 @@ form{
  input:focus {
     outline: 0;
     }
+
 #addButton{
     cursor: pointer;
     font-family: 'Poppins';
     font-weight:700;
     box-shadow: 0 2px 7px 1px rgba(0,0,0,0.2);
     border: 0;
-    color: white;
+    padding:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color:rgb(27, 224, 9);
-    width:7rem;
-    border-radius: 4px;
+    width: 3rem;
+    height: 3rem;
+    border-radius:50%;
+    
 }
 #addButton:hover {
     background-color:rgb(77, 184, 1);
     transition: 200ms;
+}
+
+#addButton img{
+    width:40%;
+
+}
+
+.item{
+    background:rgb(247, 247, 247);
+    font-size:19px;
+    width:100% ;
+    padding:8px;
+    border-radius: 3px;
+    display:flex;
+    margin:10px auto;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+@media (max-width: 650px){
+    #addButton{
+        margin-left: .5rem;
+    }
+
 }

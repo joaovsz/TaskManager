@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./TodoForm.css";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../actions/listActions";
-
+// import "../../assets/images/plusIcon.svg"
 function TodoForm() {
   
   const [text, setText] = useState("");
@@ -31,10 +31,15 @@ function TodoForm() {
         type="text"
         onChange={handleChange}
         value={text}
+        placeholder="Adicione sua tarefa aqui!"
       ></input>
+     
       <button id="addButton" onClick={addItemEvent}>
-        ADICIONAR
+        
+        <img src="./plusIcon.svg" alt="plus"></img>
+        
       </button>
+     
     </form>
   );
 }
