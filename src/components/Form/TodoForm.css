@@ -48,7 +48,7 @@ form{
 
 .item{
     background:rgb(247, 247, 247);
-    font-size:19px;
+    font-size:13px;
     width:100% ;
     padding:8px;
     border-radius: 3px;
@@ -67,7 +67,7 @@ form{
     }
 
   .item{
-      font-size:.8rem;
+       font-size:13px;
       line-height:.8rem;
       text-align:left;
   }
