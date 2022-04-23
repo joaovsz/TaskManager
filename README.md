@@ -25,7 +25,7 @@ O To-Do é uma aplicação desenvolvida com React que demonstra a utilização d
 
 ## 🔖 Demonstração
 
-
+<img src="public/demogif.gif">
 
 
 ---
