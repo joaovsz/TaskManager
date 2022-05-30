@@ -9,7 +9,7 @@
 }
 
 .item{
-   
+    border-left: 4px solid rgb(77, 184, 1);
     display: flex;
     align-items: center;
     flex-direction: row;

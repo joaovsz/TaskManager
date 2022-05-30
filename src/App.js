@@ -8,7 +8,6 @@ import listReducer from './reducers/listReducer.js'
 
 function persistState(state){
   localStorage.setItem(SAVED_ITEMS, JSON.stringify(state));
-
 }
 
 function loadState() {
@@ -22,7 +21,7 @@ function loadState() {
 
 const SAVED_ITEMS = "savedItems"
 
-const store = createStore(listReducer, loadState())
+ const store = createStore(listReducer, loadState())
 
 store.subscribe(()=>{
   persistState(store.getState())
