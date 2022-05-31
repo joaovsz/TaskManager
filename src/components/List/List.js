@@ -1,5 +1,5 @@
 import React from "react";
-import ListItem from "../Item/ListItem";
+import ListItem from "../Item/List-item";
 import {useSelector} from 'react-redux'
 
 function List() {

@@ -1,10 +1,10 @@
 import React from "react";
 import List from "./components/List/List";
-import TodoForm from "./components/Form/TodoForm";
+import TodoForm from "./components/Form/Todo-form";
 import "./Todo.css";
 import {createStore} from 'redux'
 import { Provider } from 'react-redux'
-import listReducer from './reducers/listReducer.js'
+import listReducer from './reducers/list-reducer.js'
 
 function persistState(state){
   localStorage.setItem(SAVED_ITEMS, JSON.stringify(state));
