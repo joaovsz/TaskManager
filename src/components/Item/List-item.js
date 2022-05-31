@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Card from "../Card/Card";
 import React from "react";
 import "./ListItem.css";
@@ -31,7 +32,7 @@ function ListItem(props) {
           <button className="listButton" onClick={() => {dispatch(deleteItem(props.item.id));
             }}
           >
-            <img src="./trash.png" id="trash"></img>
+            <img src="./trash.png" alt="deletar" id="trash"></img>
           </button>
         </div>
        
