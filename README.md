@@ -27,7 +27,9 @@ O To-Do é uma aplicação desenvolvida com React que demonstra a utilização d
 
 <img src="public/demogif.gif">
 
+## 🔖 Layout
 
+Você pode visualizar o projeto em funcionamento através [desse link](https://to-domanager.netlify.app/).
 ---
 
 Feito com ♥ by JoãoVitor :wave: [Fala comigo!](mailto:joaovitor1713coin@gmail.com)
